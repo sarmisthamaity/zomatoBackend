@@ -13,5 +13,5 @@ mongoose.connect(mongoUrl, ({
     console.log(`not connected...`, err);
 });
 
-// mongoose.Promise = global.Promise;
-// module.exports = mongoose;
+mongoose.Promise = global.Promise;
+module.exports = mongoose;

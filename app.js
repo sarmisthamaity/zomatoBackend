@@ -7,8 +7,6 @@ require('./connection/connect');
 
 app.use('/', require('./routes/index'));
 
-
-
 app.listen(process.env.PORT, (err) => {
     if(err) throw err;
     console.log(`server running on port ${process.env.PORT}`);
